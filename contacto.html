@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Matriculación - IES El Caminas</title>
+    
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="estilos.cs">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>IES El Caminas</h1>
+            <p class="subtitle">Educación de Calidad en Castellón</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="estudios.html">Oferta Educativa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contacto-intro">
+            <h2>Contacto y Matriculación</h2>
+            <p>Estamos aquí para ayudarte. Rellena el formulario con tus datos y nos pondremos en contacto contigo lo antes posible para resolver todas tus dudas sobre el proceso de matriculación.</p>
+        </section>
+
+        <section class="info-contacto">
+            <h2>Información de Contacto</h2>
+                <div class="contacto-item">
+                    <h3>Dirección</h3>
+                    <p> CL. PINTOR SOLER BLASCO 
+                        <br>Nº - 3
+                        <br>12003 (CASTELLÓ DE LA PLANA)</p>
+                </div>
+                <div class="contacto-item">
+                    <h3>Teléfono</h3>
+                    <p> 964738995</p>
+                </div>
+                <div class="contacto-item">
+                    <h3>Email</h3>
+                    <p>12004217@edu.gva.es<br>
+                </div>
+        </section>
+
+        <section class="formulario-matriculacion">
+            <h2>Formulario de Preinscripción</h2>
+            <form>
+                
+                <fieldset>
+                    <legend>Datos Personales del Alumno/a</legend>
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: María García López">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dni">DNI/NIE:</label>
+                        <input type="text" id="dni" name="dni" required pattern="[0-9]{8}[A-Za-z]" placeholder="12345678A">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="alumno@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="964 123 456">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion">Dirección completa:</label>
+                        <input type="text" id="direccion" name="direccion" required placeholder="Calle, número, piso">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos del Padre/Madre/Tutor Legal</legend>
+                    
+                    <div class="form-group">
+                        <label for="nombre-tutor">Nombre completo del tutor:</label>
+                        <input type="text" id="nombre-tutor" name="nombre-tutor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-tutor">Email del tutor:</label>
+                        <input type="email" id="email-tutor" name="email-tutor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono-tutor">Teléfono del tutor:</label>
+                        <input type="tel" id="telefono-tutor" name="telefono-tutor" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información Académica</legend>
+                    
+                    <div class="form-group">
+                        <label for="curso">Curso al que solicita plaza:</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">-- Selecciona un curso --</option>
+                            <option value="1-eso">1º ESO</option>
+                            <option value="2-eso">2º ESO</option>
+                            <option value="3-eso">3º ESO</option>
+                            <option value="4-eso">4º ESO</option>
+                            <option value="1-bach-ciencias">1º Bachillerato - Ciencias</option>
+                            <option value="1-bach-humanidades">1º Bachillerato - Humanidades y Ciencias Sociales</option>
+                            <option value="2-bach-ciencias">2º Bachillerato - Ciencias</option>
+                            <option value="2-bach-humanidades">2º Bachillerato - Humanidades y Ciencias Sociales</option>
+                            <option value="cfgm-smr">CFGM - Sistemas Microinformáticos y Redes</option>
+                            <option value="cfgs-daw">CFGS - Desarrollo de Aplicaciones Web</option>
+                            /* faltan
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="centro-anterior">Centro educativo de procedencia:</label>
+                        <input type="text" id="centro-anterior" name="centro-anterior" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="necesidades">¿El alumno/a tiene necesidades educativas especiales?</label>
+                        <select id="necesidades" name="necesidades">
+                            <option value="no">No</option>
+                            <option value="si">Sí</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="observaciones">Observaciones o comentarios adicionales:</label>
+                        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Indique cualquier información relevante para el proceso de matriculación"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Servicios Adicionales</legend>
+                    
+                    <div class="form-group-check">
+                        <input type="checkbox" id="transporte" name="transporte" value="si">
+                        <label for="transporte">Solicito servicio de transporte escolar</label>
+                    </div>
+
+                    <div class="form-group-check">
+                        <input type="checkbox" id="comedor" name="comedor" value="si">
+                        <label for="comedor">Solicito servicio de comedor</label>
+                    </div>
+
+                    <div class="form-group-check">
+                        <input type="checkbox" id="actividades" name="actividades" value="si">
+                        <label for="actividades">Deseo recibir información sobre actividades extraescolares</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Protección de Datos</legend>
+                    
+                    <div class="form-group-check">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">
+                            He leído y acepto la <a href="#" target="_blank">Política de Privacidad</a> y el tratamiento de mis datos personales conforme al Reglamento General de Protección de Datos (RGPD). *
+                        </label>
+                    </div>
+
+                    <div class="form-group-check">
+                        <input type="checkbox" id="comunicaciones" name="comunicaciones">
+                        <label for="comunicaciones">
+                            Acepto recibir comunicaciones informativas del centro sobre eventos, actividades y noticias de interés educativo
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+                    <button type="reset" class="btn-reset">Borrar Formulario</button>
+                </div>
+
+                <p class="form-note">* Campos obligatorios. La información proporcionada será tratada confidencialmente y utilizada únicamente para el proceso de matriculación.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content"></div>
+            <div class="footer-legal">
+                <p>&copy; 2026 IES El Caminas. Todos los derechos reservados.</p>
+                <p><a href="#">Política de Privacidad</a> | <a href="#">Aviso Legal</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
