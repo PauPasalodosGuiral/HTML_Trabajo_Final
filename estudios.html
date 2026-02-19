@@ -13,7 +13,7 @@
     <meta property="og:site_name" content="IES ElCaminàs">
 
     <link rel="icon" href="images/ies_el_camins_logo.jpg" />
-    <link rel="stylesheet" href="estilos.cs">
+    <link rel="stylesheet" href="estilos.css">
     
 </head>
 <body>
@@ -158,8 +158,30 @@
 
         <section class="logo-canvas">
             <h2>Logotipo Institucional</h2>
-            <canvas id="logoCanvas" width="400" height="300"></canvas>
-            <p class="canvas-description">Representación abstracta del logo IES El Caminas con los colores corporativos: rojo y amarillo</p>
+            <canvas id="logoCanvas" width="200" height="130" style="border: 1px solid;"></canvas>
+            <script>
+                const canvas = document.getElementById('logoCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#4573f6';
+                ctx.fillRect(0, 0, 200 , 65);
+
+                ctx.fillStyle = '#4ede4b';
+                ctx.fillRect(0, 65, 200, 65);
+
+                ctx.fillStyle = 'white';
+                ctx.beginPath();
+                ctx.moveTo(0, 50);
+
+                ctx.quadraticCurveTo(50, 30, 100, 50);
+                ctx.quadraticCurveTo(150, 70, 200, 50);
+
+                ctx.lineTo(200, 80);
+                ctx.quadraticCurveTo(150, 100, 100, 80);
+                ctx.quadraticCurveTo(50, 60, 0, 80);
+                ctx.closePath();
+                ctx.fill();
+
+            </script>
         </section>
     </main>
 
