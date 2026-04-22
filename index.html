@@ -15,7 +15,6 @@
 
     <link rel="icon" href="images/ies_el_camins_logo.jpg" />
     <link rel="stylesheet" href="estilos.css">
-  
 </head>
 <body>
     <header>
@@ -41,38 +40,16 @@
             </div>
         </section>
 
-        <section class="noticias">
-            <h2>Últimas Noticias</h2>
+        <section id="seccion-noticias">
+            <div id="tablon-btn-destacar" >
+            <h2 id="tablon-anuncios">Tablón de Anuncios</h2>
             
-            <article class="noticia">
-                <header>
-                    <h3>Convocatoria de las pruebas homologadas A2 – Curso 2025/2026</h3>
-                    <time datetime="2026-01-15">15 de enero de 2026</time>
-                </header>
-                <p>La Conselleria de Educación, Cultura y Universidades 
-                    ha publicado la Resolución de 17 de diciembre de 2025 
-                    por la que se convocan las pruebas homologadas del nivel 
-                    A2 del Marco Común Europeo de Referencia para las Lenguas 
-                    (MCER) para el curso 2025/2026.
-                    <details> <summary>Foto</summary> <img src="images/noticia1.webp" ></details></p>
-                
-                
-                <footer>
-                    <p class="descripcion">Categoría: Examenes Oficiales | Autor: Equipo Directivo</p>
-                </footer>
-            </article>
-
-            <article class="noticia">
-                <header>
-                    <h3>Elecciones al Consejo Escolar</h3>
-                    <time datetime="2025-10-07">7 de octubre de 2025</time>
-                </header>
-                <p>El día 15 de octubre se elaborarán los censos y la celebración del sorteo para la elección de los miembros de la junta electoral que se constitutirá ese mismo día.</p>
-                <footer>
-                    <p class="descripcion">Categoría: Logros Académicos | Autor: Consellería</p>
-                </footer>
-            </article>
-        </section>
+            <button id="btn-destacar">Destacar Noticias Importantes</button>
+            </div>
+            <div id="contenedor-noticias"></div>
+          </section>
+          
+          <script type="module" src="app.js"></script>
 
         <section class="multimedia">
             <h2>Presentación de Nuestro Centro</h2><br>
@@ -92,5 +69,6 @@
             </div>
         </div>
     </footer>
+      
 </body>
 </html>
